@@ -494,6 +494,7 @@ public:
     QPushButton *pushButton_18;
     QPushButton *pushButton_19;
     QPushButton *pushButton_79;
+    QPushButton *pushButton_81;
     QFrame *frame_21;
     QPushButton *pushButton_76;
     QPushButton *pushButton_77;
@@ -4728,7 +4729,7 @@ public:
 "}"));
         pushButton_17 = new QPushButton(frame_17);
         pushButton_17->setObjectName(QStringLiteral("pushButton_17"));
-        pushButton_17->setGeometry(QRect(10, 60, 100, 30));
+        pushButton_17->setGeometry(QRect(10, 20, 100, 30));
         pushButton_17->setStyleSheet(QLatin1String("QPushButton\n"
 "{\n"
 "	background-color:rgb(196, 227, 255);\n"
@@ -4765,6 +4766,35 @@ public:
         pushButton_79->setObjectName(QStringLiteral("pushButton_79"));
         pushButton_79->setGeometry(QRect(10, 100, 100, 30));
         pushButton_79->setStyleSheet(QLatin1String("QPushButton\n"
+"{\n"
+"	background-color:rgb(196, 227, 255);\n"
+"	color: black;\n"
+"	font-size: 12px;\n"
+"	font-weight: bold;\n"
+"	border:1px solid black;\n"
+"}\n"
+"\n"
+"QPushButton::pressed\n"
+"{\n"
+"	background-color:rgb(69, 140, 255);\n"
+"	color: Black;\n"
+"	font-size: 12px;\n"
+"	font-weight: bold;\n"
+"	border:1px solid black;\n"
+"\n"
+"}\n"
+"QPusgButton::hover\n"
+"{\n"
+"	background-color:rgb(69, 140, 255);\n"
+"	color: Black;\n"
+"	font-size: 12px;\n"
+"	font-weight: bold;\n"
+"	border:1px solid black;\n"
+"}"));
+        pushButton_81 = new QPushButton(frame_17);
+        pushButton_81->setObjectName(QStringLiteral("pushButton_81"));
+        pushButton_81->setGeometry(QRect(10, 60, 100, 30));
+        pushButton_81->setStyleSheet(QLatin1String("QPushButton\n"
 "{\n"
 "	background-color:rgb(196, 227, 255);\n"
 "	color: black;\n"
@@ -6000,7 +6030,7 @@ public:
         QObject::connect(calendarWidget, SIGNAL(clicked(QDate)), dateTimeEdit_3, SLOT(setDate(QDate)));
 
         stackedWidget->setCurrentIndex(10);
-        tabWidget_2->setCurrentIndex(3);
+        tabWidget_2->setCurrentIndex(2);
         tabWidget->setCurrentIndex(5);
 
 
@@ -6479,10 +6509,11 @@ public:
         tabWidget_2->setTabText(tabWidget_2->indexOf(tab_8), QApplication::translate("MainWindow", "ADC", nullptr));
         pushButton_15->setText(QApplication::translate("MainWindow", "Forward", nullptr));
         pushButton_16->setText(QApplication::translate("MainWindow", "Backward", nullptr));
-        pushButton_17->setText(QApplication::translate("MainWindow", "Home", nullptr));
+        pushButton_17->setText(QApplication::translate("MainWindow", "Plate Home", nullptr));
         pushButton_18->setText(QString());
         pushButton_19->setText(QString());
         pushButton_79->setText(QApplication::translate("MainWindow", "Park", nullptr));
+        pushButton_81->setText(QApplication::translate("MainWindow", "Index Home", nullptr));
         pushButton_76->setText(QString());
         pushButton_77->setText(QString());
         pushButton_78->setText(QString());
@@ -6533,7 +6564,7 @@ public:
         tabWidget->setTabText(tabWidget->indexOf(tab_5), QApplication::translate("MainWindow", "LIS", nullptr));
         pushButton_33->setText(QApplication::translate("MainWindow", "Check for updates", nullptr));
         label_53->setText(QApplication::translate("MainWindow", "Current Version", nullptr));
-        label_67->setText(QApplication::translate("MainWindow", "V1.0.1", nullptr));
+        label_67->setText(QApplication::translate("MainWindow", "V1.0.2", nullptr));
         label_68->setText(QString());
         tabWidget->setTabText(tabWidget->indexOf(tab_6), QApplication::translate("MainWindow", "Version", nullptr));
         QTableWidgetItem *___qtablewidgetitem8 = tableWidget_2->horizontalHeaderItem(0);
