@@ -386,6 +386,7 @@ public:
     QLabel *label_38;
     QLabel *label_42;
     QComboBox *comboBox_13;
+    QToolButton *toolButton_30;
     QWidget *page_9;
     QFrame *frame_20;
     QToolButton *toolButton_25;
@@ -3647,6 +3648,35 @@ public:
 "}\n"
 "\n"
 ""));
+        toolButton_30 = new QToolButton(page_8);
+        toolButton_30->setObjectName(QStringLiteral("toolButton_30"));
+        toolButton_30->setGeometry(QRect(440, 410, 130, 60));
+        toolButton_30->setStyleSheet(QLatin1String("QToolButton\n"
+"{\n"
+"	background-color:rgb(196, 227, 255);\n"
+"	color: black;\n"
+"	font-size: 15px;\n"
+"	font-weight: bold;\n"
+"	border:1px solid black;\n"
+"}\n"
+"\n"
+"QToolButton::pressed\n"
+"{\n"
+"	background-color:rgb(69, 140, 255);\n"
+"	color: Black;\n"
+"	font-size: 15px;\n"
+"	font-weight: bold;\n"
+"	border:1px solid black;\n"
+"\n"
+"}\n"
+"QToolButton::hover\n"
+"{\n"
+"	background-color:rgb(69, 140, 255);\n"
+"	color: Black;\n"
+"	font-size: 15px;\n"
+"	font-weight: bold;\n"
+"	border:1px solid black;\n"
+"}"));
         stackedWidget->addWidget(page_8);
         page_9 = new QWidget();
         page_9->setObjectName(QStringLiteral("page_9"));
@@ -6029,7 +6059,7 @@ public:
         QObject::connect(dateTimeEdit_3, SIGNAL(dateChanged(QDate)), calendarWidget, SLOT(setSelectedDate(QDate)));
         QObject::connect(calendarWidget, SIGNAL(clicked(QDate)), dateTimeEdit_3, SLOT(setDate(QDate)));
 
-        stackedWidget->setCurrentIndex(5);
+        stackedWidget->setCurrentIndex(6);
         tabWidget_2->setCurrentIndex(2);
         tabWidget->setCurrentIndex(5);
 
@@ -6400,6 +6430,7 @@ public:
         label_17->setText(QApplication::translate("MainWindow", "TextLabel", nullptr));
         label_38->setText(QApplication::translate("MainWindow", "TextLabel", nullptr));
         label_42->setText(QString());
+        toolButton_30->setText(QApplication::translate("MainWindow", "Export Matrix", nullptr));
         toolButton_25->setText(QApplication::translate("MainWindow", "View Plate", nullptr));
         toolButton_26->setText(QApplication::translate("MainWindow", "Cancel", nullptr));
         toolButton_33->setText(QApplication::translate("MainWindow", "Accept Test", nullptr));
@@ -6564,7 +6595,7 @@ public:
         tabWidget->setTabText(tabWidget->indexOf(tab_5), QApplication::translate("MainWindow", "LIS", nullptr));
         pushButton_33->setText(QApplication::translate("MainWindow", "Check for updates", nullptr));
         label_53->setText(QApplication::translate("MainWindow", "Current Version", nullptr));
-        label_67->setText(QApplication::translate("MainWindow", "V1.0.6", nullptr));
+        label_67->setText(QApplication::translate("MainWindow", "V1.0.7", nullptr));
         label_68->setText(QString());
         tabWidget->setTabText(tabWidget->indexOf(tab_6), QApplication::translate("MainWindow", "Version", nullptr));
         QTableWidgetItem *___qtablewidgetitem8 = tableWidget_2->horizontalHeaderItem(0);
