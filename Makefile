@@ -12,10 +12,10 @@ MAKEFILE      = Makefile
 
 CC            = gcc
 CXX           = g++
-DEFINES       = -DQT_DEPRECATED_WARNINGS -DQT_QML_DEBUG -DQT_CHARTS_LIB -DQT_PRINTSUPPORT_LIB -DQT_WEBKITWIDGETS_LIB -DQT_WIDGETS_LIB -DQT_WEBKIT_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB
+DEFINES       = -DQT_DEPRECATED_WARNINGS -DQT_QML_DEBUG -DQT_CHARTS_LIB -DQT_PRINTSUPPORT_LIB -DQT_WEBKITWIDGETS_LIB -DQT_WIDGETS_LIB -DQT_WEBKIT_LIB -DQT_XLSX_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB
 CFLAGS        = -pipe -g -Wall -W -D_REENTRANT -fPIC $(DEFINES)
 CXXFLAGS      = -pipe -g -std=gnu++11 -Wall -W -D_REENTRANT -fPIC $(DEFINES)
-INCPATH       = -I../../Desktop/ELISAREADER_NEW-main -I. -isystem /usr/local/include -isystem /usr/include/arm-linux-gnueabihf/qt5 -isystem /usr/include/arm-linux-gnueabihf/qt5/QtCharts -isystem /usr/include/arm-linux-gnueabihf/qt5/QtPrintSupport -isystem /usr/include/arm-linux-gnueabihf/qt5/QtWebKitWidgets -isystem /usr/include/arm-linux-gnueabihf/qt5/QtWidgets -isystem /usr/include/arm-linux-gnueabihf/qt5/QtWebKit -isystem /usr/include/arm-linux-gnueabihf/qt5/QtGui -isystem /usr/include/arm-linux-gnueabihf/qt5/QtSql -isystem /usr/include/arm-linux-gnueabihf/qt5/QtQml -isystem /usr/include/arm-linux-gnueabihf/qt5/QtNetwork -isystem /usr/include/arm-linux-gnueabihf/qt5/QtCore -I. -I. -I/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/linux-g++
+INCPATH       = -I../../Desktop/ELISAREADER_NEW-main -I. -isystem /usr/local/include -isystem /usr/include/arm-linux-gnueabihf/qt5 -isystem /usr/include/arm-linux-gnueabihf/qt5/QtCharts -isystem /usr/include/arm-linux-gnueabihf/qt5/QtPrintSupport -isystem /usr/include/arm-linux-gnueabihf/qt5/QtWebKitWidgets -isystem /usr/include/arm-linux-gnueabihf/qt5/QtWidgets -isystem /usr/include/arm-linux-gnueabihf/qt5/QtWebKit -isystem /usr/include/arm-linux-gnueabihf/qt5/QtXlsx -isystem /usr/include/arm-linux-gnueabihf/qt5/QtGui -isystem /usr/include/arm-linux-gnueabihf/qt5/QtSql -isystem /usr/include/arm-linux-gnueabihf/qt5/QtQml -isystem /usr/include/arm-linux-gnueabihf/qt5/QtNetwork -isystem /usr/include/arm-linux-gnueabihf/qt5/QtCore -I. -I. -I/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/linux-g++
 QMAKE         = /usr/lib/qt5/bin/qmake
 DEL_FILE      = rm -f
 CHK_DIR_EXISTS= test -d
@@ -38,7 +38,7 @@ DISTNAME      = ELISAREADER1.0.0
 DISTDIR = /home/pi/git/build-ELISAREADER-Desktop-Debug/.tmp/ELISAREADER1.0.0
 LINK          = g++
 LFLAGS        = -Wl,-rpath-link,/usr/lib/arm-linux-gnueabihf
-LIBS          = $(SUBLIBS) -L/usr/local/lib -lwiringPi -lQt5Charts -lQt5PrintSupport -lQt5WebKitWidgets -lQt5Widgets -lQt5WebKit -lQt5Gui -lQt5Sql -lQt5Qml -lQt5Network -lQt5Core -lGLESv2 -lpthread -latomic 
+LIBS          = $(SUBLIBS) -L/usr/local/lib -lwiringPi -lQt5Charts -lQt5PrintSupport -lQt5WebKitWidgets -lQt5Widgets -lQt5WebKit -lQt5Xlsx -lQt5Gui -lQt5Sql -lQt5Qml -lQt5Network -lQt5Core -lGLESv2 -lpthread -latomic 
 AR            = ar cqs
 RANLIB        = 
 SED           = sed
@@ -128,6 +128,8 @@ DIST          = /usr/lib/arm-linux-gnueabihf/qt5/mkspecs/features/spec_pre.prf \
 		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_widgets.pri \
 		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_widgets_private.pri \
 		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_xcb_qpa_lib_private.pri \
+		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_xlsx.pri \
+		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_xlsx_private.pri \
 		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_xml.pri \
 		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_xml_private.pri \
 		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/features/qt_functions.prf \
@@ -240,6 +242,8 @@ Makefile: ../../Desktop/ELISAREADER_NEW-main/ELISAREADER.pro /usr/lib/arm-linux-
 		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_widgets.pri \
 		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_widgets_private.pri \
 		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_xcb_qpa_lib_private.pri \
+		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_xlsx.pri \
+		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_xlsx_private.pri \
 		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_xml.pri \
 		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_xml_private.pri \
 		/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/features/qt_functions.prf \
@@ -270,6 +274,7 @@ Makefile: ../../Desktop/ELISAREADER_NEW-main/ELISAREADER.pro /usr/lib/arm-linux-
 		/usr/lib/arm-linux-gnueabihf/libQt5Charts.prl \
 		/usr/lib/arm-linux-gnueabihf/libQt5PrintSupport.prl \
 		/usr/lib/arm-linux-gnueabihf/libQt5Widgets.prl \
+		/usr/lib/arm-linux-gnueabihf/libQt5Xlsx.prl \
 		/usr/lib/arm-linux-gnueabihf/libQt5Gui.prl \
 		/usr/lib/arm-linux-gnueabihf/libQt5Sql.prl \
 		/usr/lib/arm-linux-gnueabihf/libQt5Qml.prl \
@@ -333,6 +338,8 @@ Makefile: ../../Desktop/ELISAREADER_NEW-main/ELISAREADER.pro /usr/lib/arm-linux-
 /usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_widgets.pri:
 /usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_widgets_private.pri:
 /usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_xcb_qpa_lib_private.pri:
+/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_xlsx.pri:
+/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_xlsx_private.pri:
 /usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_xml.pri:
 /usr/lib/arm-linux-gnueabihf/qt5/mkspecs/modules/qt_lib_xml_private.pri:
 /usr/lib/arm-linux-gnueabihf/qt5/mkspecs/features/qt_functions.prf:
@@ -363,6 +370,7 @@ Makefile: ../../Desktop/ELISAREADER_NEW-main/ELISAREADER.pro /usr/lib/arm-linux-
 /usr/lib/arm-linux-gnueabihf/libQt5Charts.prl:
 /usr/lib/arm-linux-gnueabihf/libQt5PrintSupport.prl:
 /usr/lib/arm-linux-gnueabihf/libQt5Widgets.prl:
+/usr/lib/arm-linux-gnueabihf/libQt5Xlsx.prl:
 /usr/lib/arm-linux-gnueabihf/libQt5Gui.prl:
 /usr/lib/arm-linux-gnueabihf/libQt5Sql.prl:
 /usr/lib/arm-linux-gnueabihf/libQt5Qml.prl:
@@ -429,18 +437,18 @@ moc_mainwindow.cpp: ../../Desktop/ELISAREADER_NEW-main/keyboard.h \
 		../../Desktop/ELISAREADER_NEW-main/mainwindow.h \
 		moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/pi/git/build-ELISAREADER-Desktop-Debug/moc_predefs.h -I/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/linux-g++ -I/home/pi/Desktop/ELISAREADER_NEW-main -I/usr/local/include -I/usr/include/arm-linux-gnueabihf/qt5 -I/usr/include/arm-linux-gnueabihf/qt5/QtCharts -I/usr/include/arm-linux-gnueabihf/qt5/QtPrintSupport -I/usr/include/arm-linux-gnueabihf/qt5/QtWebKitWidgets -I/usr/include/arm-linux-gnueabihf/qt5/QtWidgets -I/usr/include/arm-linux-gnueabihf/qt5/QtWebKit -I/usr/include/arm-linux-gnueabihf/qt5/QtGui -I/usr/include/arm-linux-gnueabihf/qt5/QtSql -I/usr/include/arm-linux-gnueabihf/qt5/QtQml -I/usr/include/arm-linux-gnueabihf/qt5/QtNetwork -I/usr/include/arm-linux-gnueabihf/qt5/QtCore -I. -I/usr/include/c++/8 -I/usr/include/arm-linux-gnueabihf/c++/8 -I/usr/include/c++/8/backward -I/usr/lib/gcc/arm-linux-gnueabihf/8/include -I/usr/local/include -I/usr/lib/gcc/arm-linux-gnueabihf/8/include-fixed -I/usr/include/arm-linux-gnueabihf -I/usr/include ../../Desktop/ELISAREADER_NEW-main/mainwindow.h -o moc_mainwindow.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/pi/git/build-ELISAREADER-Desktop-Debug/moc_predefs.h -I/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/linux-g++ -I/home/pi/Desktop/ELISAREADER_NEW-main -I/usr/local/include -I/usr/include/arm-linux-gnueabihf/qt5 -I/usr/include/arm-linux-gnueabihf/qt5/QtCharts -I/usr/include/arm-linux-gnueabihf/qt5/QtPrintSupport -I/usr/include/arm-linux-gnueabihf/qt5/QtWebKitWidgets -I/usr/include/arm-linux-gnueabihf/qt5/QtWidgets -I/usr/include/arm-linux-gnueabihf/qt5/QtWebKit -I/usr/include/arm-linux-gnueabihf/qt5/QtXlsx -I/usr/include/arm-linux-gnueabihf/qt5/QtGui -I/usr/include/arm-linux-gnueabihf/qt5/QtSql -I/usr/include/arm-linux-gnueabihf/qt5/QtQml -I/usr/include/arm-linux-gnueabihf/qt5/QtNetwork -I/usr/include/arm-linux-gnueabihf/qt5/QtCore -I. -I/usr/include/c++/8 -I/usr/include/arm-linux-gnueabihf/c++/8 -I/usr/include/c++/8/backward -I/usr/lib/gcc/arm-linux-gnueabihf/8/include -I/usr/local/include -I/usr/lib/gcc/arm-linux-gnueabihf/8/include-fixed -I/usr/include/arm-linux-gnueabihf -I/usr/include ../../Desktop/ELISAREADER_NEW-main/mainwindow.h -o moc_mainwindow.cpp
 
 moc_keyboard.cpp: ../../Desktop/ELISAREADER_NEW-main/keyboard.h \
 		moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/pi/git/build-ELISAREADER-Desktop-Debug/moc_predefs.h -I/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/linux-g++ -I/home/pi/Desktop/ELISAREADER_NEW-main -I/usr/local/include -I/usr/include/arm-linux-gnueabihf/qt5 -I/usr/include/arm-linux-gnueabihf/qt5/QtCharts -I/usr/include/arm-linux-gnueabihf/qt5/QtPrintSupport -I/usr/include/arm-linux-gnueabihf/qt5/QtWebKitWidgets -I/usr/include/arm-linux-gnueabihf/qt5/QtWidgets -I/usr/include/arm-linux-gnueabihf/qt5/QtWebKit -I/usr/include/arm-linux-gnueabihf/qt5/QtGui -I/usr/include/arm-linux-gnueabihf/qt5/QtSql -I/usr/include/arm-linux-gnueabihf/qt5/QtQml -I/usr/include/arm-linux-gnueabihf/qt5/QtNetwork -I/usr/include/arm-linux-gnueabihf/qt5/QtCore -I. -I/usr/include/c++/8 -I/usr/include/arm-linux-gnueabihf/c++/8 -I/usr/include/c++/8/backward -I/usr/lib/gcc/arm-linux-gnueabihf/8/include -I/usr/local/include -I/usr/lib/gcc/arm-linux-gnueabihf/8/include-fixed -I/usr/include/arm-linux-gnueabihf -I/usr/include ../../Desktop/ELISAREADER_NEW-main/keyboard.h -o moc_keyboard.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/pi/git/build-ELISAREADER-Desktop-Debug/moc_predefs.h -I/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/linux-g++ -I/home/pi/Desktop/ELISAREADER_NEW-main -I/usr/local/include -I/usr/include/arm-linux-gnueabihf/qt5 -I/usr/include/arm-linux-gnueabihf/qt5/QtCharts -I/usr/include/arm-linux-gnueabihf/qt5/QtPrintSupport -I/usr/include/arm-linux-gnueabihf/qt5/QtWebKitWidgets -I/usr/include/arm-linux-gnueabihf/qt5/QtWidgets -I/usr/include/arm-linux-gnueabihf/qt5/QtWebKit -I/usr/include/arm-linux-gnueabihf/qt5/QtXlsx -I/usr/include/arm-linux-gnueabihf/qt5/QtGui -I/usr/include/arm-linux-gnueabihf/qt5/QtSql -I/usr/include/arm-linux-gnueabihf/qt5/QtQml -I/usr/include/arm-linux-gnueabihf/qt5/QtNetwork -I/usr/include/arm-linux-gnueabihf/qt5/QtCore -I. -I/usr/include/c++/8 -I/usr/include/arm-linux-gnueabihf/c++/8 -I/usr/include/c++/8/backward -I/usr/lib/gcc/arm-linux-gnueabihf/8/include -I/usr/local/include -I/usr/lib/gcc/arm-linux-gnueabihf/8/include-fixed -I/usr/include/arm-linux-gnueabihf -I/usr/include ../../Desktop/ELISAREADER_NEW-main/keyboard.h -o moc_keyboard.cpp
 
 moc_dialog.cpp: ../../Desktop/ELISAREADER_NEW-main/keyboard.h \
 		../../Desktop/ELISAREADER_NEW-main/dialog.h \
 		moc_predefs.h \
 		/usr/lib/qt5/bin/moc
-	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/pi/git/build-ELISAREADER-Desktop-Debug/moc_predefs.h -I/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/linux-g++ -I/home/pi/Desktop/ELISAREADER_NEW-main -I/usr/local/include -I/usr/include/arm-linux-gnueabihf/qt5 -I/usr/include/arm-linux-gnueabihf/qt5/QtCharts -I/usr/include/arm-linux-gnueabihf/qt5/QtPrintSupport -I/usr/include/arm-linux-gnueabihf/qt5/QtWebKitWidgets -I/usr/include/arm-linux-gnueabihf/qt5/QtWidgets -I/usr/include/arm-linux-gnueabihf/qt5/QtWebKit -I/usr/include/arm-linux-gnueabihf/qt5/QtGui -I/usr/include/arm-linux-gnueabihf/qt5/QtSql -I/usr/include/arm-linux-gnueabihf/qt5/QtQml -I/usr/include/arm-linux-gnueabihf/qt5/QtNetwork -I/usr/include/arm-linux-gnueabihf/qt5/QtCore -I. -I/usr/include/c++/8 -I/usr/include/arm-linux-gnueabihf/c++/8 -I/usr/include/c++/8/backward -I/usr/lib/gcc/arm-linux-gnueabihf/8/include -I/usr/local/include -I/usr/lib/gcc/arm-linux-gnueabihf/8/include-fixed -I/usr/include/arm-linux-gnueabihf -I/usr/include ../../Desktop/ELISAREADER_NEW-main/dialog.h -o moc_dialog.cpp
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/pi/git/build-ELISAREADER-Desktop-Debug/moc_predefs.h -I/usr/lib/arm-linux-gnueabihf/qt5/mkspecs/linux-g++ -I/home/pi/Desktop/ELISAREADER_NEW-main -I/usr/local/include -I/usr/include/arm-linux-gnueabihf/qt5 -I/usr/include/arm-linux-gnueabihf/qt5/QtCharts -I/usr/include/arm-linux-gnueabihf/qt5/QtPrintSupport -I/usr/include/arm-linux-gnueabihf/qt5/QtWebKitWidgets -I/usr/include/arm-linux-gnueabihf/qt5/QtWidgets -I/usr/include/arm-linux-gnueabihf/qt5/QtWebKit -I/usr/include/arm-linux-gnueabihf/qt5/QtXlsx -I/usr/include/arm-linux-gnueabihf/qt5/QtGui -I/usr/include/arm-linux-gnueabihf/qt5/QtSql -I/usr/include/arm-linux-gnueabihf/qt5/QtQml -I/usr/include/arm-linux-gnueabihf/qt5/QtNetwork -I/usr/include/arm-linux-gnueabihf/qt5/QtCore -I. -I/usr/include/c++/8 -I/usr/include/arm-linux-gnueabihf/c++/8 -I/usr/include/c++/8/backward -I/usr/lib/gcc/arm-linux-gnueabihf/8/include -I/usr/local/include -I/usr/lib/gcc/arm-linux-gnueabihf/8/include-fixed -I/usr/include/arm-linux-gnueabihf -I/usr/include ../../Desktop/ELISAREADER_NEW-main/dialog.h -o moc_dialog.cpp
 
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:
