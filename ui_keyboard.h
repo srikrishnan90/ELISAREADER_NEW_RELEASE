@@ -165,6 +165,7 @@ public:
     QPushButton *pushButton_256;
     QPushButton *pushButton_142;
     QPushButton *pushButton_135;
+    QPushButton *pushButton_258;
 
     void setupUi(QDialog *keyboard)
     {
@@ -1990,7 +1991,7 @@ public:
 "}"));
         pushButton_139 = new QPushButton(frame_5);
         pushButton_139->setObjectName(QStringLiteral("pushButton_139"));
-        pushButton_139->setGeometry(QRect(140, 215, 60, 60));
+        pushButton_139->setGeometry(QRect(70, 215, 60, 60));
         pushButton_139->setFont(font2);
         pushButton_139->setStyleSheet(QLatin1String("QPushButton:pressed {\n"
 "    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,   stop:0 rgba(60, 186, 162, 255), stop:1 rgba(98, 211, 162, 255))\n"
@@ -2040,7 +2041,7 @@ public:
 "}"));
         pushButton_137 = new QPushButton(frame_5);
         pushButton_137->setObjectName(QStringLiteral("pushButton_137"));
-        pushButton_137->setGeometry(QRect(270, 215, 60, 60));
+        pushButton_137->setGeometry(QRect(140, 215, 60, 60));
         pushButton_137->setFont(font5);
         pushButton_137->setStyleSheet(QLatin1String("QPushButton:pressed {\n"
 "    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,   stop:0 rgba(60, 186, 162, 255), stop:1 rgba(98, 211, 162, 255))\n"
@@ -2346,11 +2347,27 @@ public:
 "QPushButton:disabled {\n"
 "    background-color: rgb(170, 170, 127)\n"
 "}"));
+        pushButton_258 = new QPushButton(frame_5);
+        pushButton_258->setObjectName(QStringLiteral("pushButton_258"));
+        pushButton_258->setGeometry(QRect(270, 215, 60, 60));
+        pushButton_258->setFont(font2);
+        pushButton_258->setStyleSheet(QLatin1String("QPushButton:pressed {\n"
+"    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,   stop:0 rgba(60, 186, 162, 255), stop:1 rgba(98, 211, 162, 255))\n"
+"}\n"
+"QPushButton {\n"
+"     background-color:rgb(59,52,48); border: 1px solid black;\n"
+"     border-radius: 5px;\n"
+"color:rgb(255, 255, 255);\n"
+"}\n"
+"\n"
+"QPushButton:disabled {\n"
+"    background-color: rgb(170, 170, 127)\n"
+"}"));
         stackedWidget_2->addWidget(page_10);
 
         retranslateUi(keyboard);
 
-        stackedWidget_2->setCurrentIndex(1);
+        stackedWidget_2->setCurrentIndex(2);
 
 
         QMetaObject::connectSlotsByName(keyboard);
@@ -2492,6 +2509,7 @@ public:
         pushButton_256->setText(QApplication::translate("keyboard", "/", nullptr));
         pushButton_142->setText(QApplication::translate("keyboard", "<", nullptr));
         pushButton_135->setText(QApplication::translate("keyboard", ">", nullptr));
+        pushButton_258->setText(QApplication::translate("keyboard", "=", nullptr));
     } // retranslateUi
 
 };

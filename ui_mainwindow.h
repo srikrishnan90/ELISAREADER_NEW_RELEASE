@@ -403,6 +403,7 @@ public:
     QLabel *label_39;
     QLabel *label_40;
     QLabel *label_41;
+    QToolButton *toolButton_37;
     QWidget *page_7;
     QTabWidget *tabWidget_2;
     QWidget *tab_7;
@@ -1001,13 +1002,13 @@ public:
         comboBox_8->setStyleSheet(QLatin1String("QComboBox:item {\n"
 "  color:white;\n"
 "background-color:rgb(0, 0, 255);\n"
-"font-size: 15px;\n"
+"font-size: 22px;\n"
 "	font-weight: bold;\n"
 "}\n"
 "QComboBox:item:selected {\n"
 " color:white;\n"
 "background-color:rgb(0, 0, 99);\n"
-"font-size: 15px;\n"
+"font-size: 25px;\n"
 "	font-weight: bold;\n"
 "}\n"
 "QComboBox:item:checked {\n"
@@ -1037,13 +1038,13 @@ public:
         comboBox_9->setStyleSheet(QLatin1String("QComboBox:item {\n"
 "  color:white;\n"
 "background-color:rgb(0, 0, 255);\n"
-"font-size: 15px;\n"
+"font-size: 22px;\n"
 "	font-weight: bold;\n"
 "}\n"
 "QComboBox:item:selected {\n"
 " color:white;\n"
 "background-color:rgb(0, 0, 99);\n"
-"font-size: 15px;\n"
+"font-size: 25px;\n"
 "	font-weight: bold;\n"
 "}\n"
 "QComboBox:item:checked {\n"
@@ -1165,13 +1166,13 @@ public:
         comboBox->setStyleSheet(QLatin1String("QComboBox:item {\n"
 "  color:white;\n"
 "background-color:rgb(0, 0, 255);\n"
-"font-size: 15px;\n"
+"font-size: 22px;\n"
 "	font-weight: bold;\n"
 "}\n"
 "QComboBox:item:selected {\n"
 " color:white;\n"
 "background-color:rgb(0, 0, 99);\n"
-"font-size: 15px;\n"
+"font-size: 25px;\n"
 "	font-weight: bold;\n"
 "}\n"
 "QComboBox:item:checked {\n"
@@ -1187,6 +1188,7 @@ public:
 "	font-weight: bold;\n"
 "}\n"
 "\n"
+"\n"
 ""));
         comboBox_2 = new QComboBox(frame_2);
         comboBox_2->addItem(QString());
@@ -1201,13 +1203,13 @@ public:
         comboBox_2->setStyleSheet(QLatin1String("QComboBox:item {\n"
 "  color:white;\n"
 "background-color:rgb(0, 0, 255);\n"
-"font-size: 15px;\n"
+"font-size: 22px;\n"
 "	font-weight: bold;\n"
 "}\n"
 "QComboBox:item:selected {\n"
 " color:white;\n"
 "background-color:rgb(0, 0, 99);\n"
-"font-size: 15px;\n"
+"font-size: 25px;\n"
 "	font-weight: bold;\n"
 "}\n"
 "QComboBox:item:checked {\n"
@@ -1317,13 +1319,65 @@ public:
         comboBox_3->addItem(QString());
         comboBox_3->setObjectName(QStringLiteral("comboBox_3"));
         comboBox_3->setGeometry(QRect(150, 55, 180, 40));
-        comboBox_3->setFont(font1);
+        comboBox_3->setFont(font);
+        comboBox_3->setStyleSheet(QLatin1String("QComboBox:item {\n"
+"  color:white;\n"
+"background-color:rgb(0, 0, 255);\n"
+"font-size: 22px;\n"
+"	font-weight: bold;\n"
+"}\n"
+"QComboBox:item:selected {\n"
+" color:white;\n"
+"background-color:rgb(0, 0, 99);\n"
+"font-size: 25px;\n"
+"	font-weight: bold;\n"
+"}\n"
+"QComboBox:item:checked {\n"
+" color:white;\n"
+"background-color:rgb(0, 0, 255);\n"
+"font-size: 15px;\n"
+"	font-weight: bold;\n"
+"}\n"
+"QComboBox{\n"
+" color:white;\n"
+"background-color:rgb(0, 0, 255);\n"
+"font-size: 15px;\n"
+"	font-weight: bold;\n"
+"}\n"
+"\n"
+""));
         comboBox_4 = new QComboBox(frame_4);
         comboBox_4->addItem(QString());
         comboBox_4->addItem(QString());
         comboBox_4->setObjectName(QStringLiteral("comboBox_4"));
         comboBox_4->setGeometry(QRect(150, 105, 180, 40));
-        comboBox_4->setFont(font1);
+        comboBox_4->setFont(font);
+        comboBox_4->setStyleSheet(QLatin1String("QComboBox:item {\n"
+"  color:white;\n"
+"background-color:rgb(0, 0, 255);\n"
+"font-size: 22px;\n"
+"	font-weight: bold;\n"
+"}\n"
+"QComboBox:item:selected {\n"
+" color:white;\n"
+"background-color:rgb(0, 0, 99);\n"
+"font-size: 25px;\n"
+"	font-weight: bold;\n"
+"}\n"
+"QComboBox:item:checked {\n"
+" color:white;\n"
+"background-color:rgb(0, 0, 255);\n"
+"font-size: 15px;\n"
+"	font-weight: bold;\n"
+"}\n"
+"QComboBox{\n"
+" color:white;\n"
+"background-color:rgb(0, 0, 255);\n"
+"font-size: 15px;\n"
+"	font-weight: bold;\n"
+"}\n"
+"\n"
+""));
         label_10 = new QLabel(frame_4);
         label_10->setObjectName(QStringLiteral("label_10"));
         label_10->setGeometry(QRect(10, 160, 111, 20));
@@ -1502,13 +1556,13 @@ public:
         comboBox_5->setStyleSheet(QLatin1String("QComboBox:item {\n"
 "  color:white;\n"
 "background-color:rgb(0, 0, 255);\n"
-"font-size: 15px;\n"
+"font-size: 22px;\n"
 "	font-weight: bold;\n"
 "}\n"
 "QComboBox:item:selected {\n"
 " color:white;\n"
 "background-color:rgb(0, 0, 99);\n"
-"font-size: 15px;\n"
+"font-size: 25px;\n"
 "	font-weight: bold;\n"
 "}\n"
 "QComboBox:item:checked {\n"
@@ -1538,13 +1592,13 @@ public:
         comboBox_6->setStyleSheet(QLatin1String("QComboBox:item {\n"
 "  color:white;\n"
 "background-color:rgb(0, 0, 255);\n"
-"font-size: 15px;\n"
+"font-size: 22px;\n"
 "	font-weight: bold;\n"
 "}\n"
 "QComboBox:item:selected {\n"
 " color:white;\n"
 "background-color:rgb(0, 0, 99);\n"
-"font-size: 15px;\n"
+"font-size: 25px;\n"
 "	font-weight: bold;\n"
 "}\n"
 "QComboBox:item:checked {\n"
@@ -1736,7 +1790,33 @@ public:
         comboBox_7->addItem(QString());
         comboBox_7->setObjectName(QStringLiteral("comboBox_7"));
         comboBox_7->setGeometry(QRect(90, 10, 150, 40));
-        comboBox_7->setFont(font1);
+        comboBox_7->setFont(font);
+        comboBox_7->setStyleSheet(QLatin1String("QComboBox:item {\n"
+"  color:white;\n"
+"background-color:rgb(0, 0, 255);\n"
+"font-size: 22px;\n"
+"	font-weight: bold;\n"
+"}\n"
+"QComboBox:item:selected {\n"
+" color:white;\n"
+"background-color:rgb(0, 0, 99);\n"
+"font-size: 25px;\n"
+"	font-weight: bold;\n"
+"}\n"
+"QComboBox:item:checked {\n"
+" color:white;\n"
+"background-color:rgb(0, 0, 255);\n"
+"font-size: 15px;\n"
+"	font-weight: bold;\n"
+"}\n"
+"QComboBox{\n"
+" color:white;\n"
+"background-color:rgb(0, 0, 255);\n"
+"font-size: 15px;\n"
+"	font-weight: bold;\n"
+"}\n"
+"\n"
+""));
         frame_9 = new QFrame(page_2);
         frame_9->setObjectName(QStringLiteral("frame_9"));
         frame_9->setGeometry(QRect(360, 90, 271, 121));
@@ -1816,13 +1896,13 @@ public:
         comboBox_10->setStyleSheet(QLatin1String("QComboBox:item {\n"
 "  color:white;\n"
 "background-color:rgb(0, 0, 255);\n"
-"font-size: 15px;\n"
+"font-size: 22px;\n"
 "	font-weight: bold;\n"
 "}\n"
 "QComboBox:item:selected {\n"
 " color:white;\n"
 "background-color:rgb(0, 0, 99);\n"
-"font-size: 15px;\n"
+"font-size: 25px;\n"
 "	font-weight: bold;\n"
 "}\n"
 "QComboBox:item:checked {\n"
@@ -1837,7 +1917,10 @@ public:
 "font-size: 15px;\n"
 "	font-weight: bold;\n"
 "}\n"
-"\n"
+"QComboBox:disabled {\n"
+"background-color:rgb(227, 226, 214);\n"
+"color: white;\n"
+"}\n"
 ""));
         label_15 = new QLabel(page_6);
         label_15->setObjectName(QStringLiteral("label_15"));
@@ -1850,13 +1933,13 @@ public:
         comboBox_11->setStyleSheet(QLatin1String("QComboBox:item {\n"
 "  color:white;\n"
 "background-color:rgb(0, 0, 255);\n"
-"font-size: 15px;\n"
+"font-size: 22px;\n"
 "	font-weight: bold;\n"
 "}\n"
 "QComboBox:item:selected {\n"
 " color:white;\n"
 "background-color:rgb(0, 0, 99);\n"
-"font-size: 15px;\n"
+"font-size: 25px;\n"
 "	font-weight: bold;\n"
 "}\n"
 "QComboBox:item:checked {\n"
@@ -1888,13 +1971,13 @@ public:
         comboBox_12->setStyleSheet(QLatin1String("QComboBox:item {\n"
 "  color:white;\n"
 "background-color:rgb(0, 0, 255);\n"
-"font-size: 15px;\n"
+"font-size: 22px;\n"
 "	font-weight: bold;\n"
 "}\n"
 "QComboBox:item:selected {\n"
 " color:white;\n"
 "background-color:rgb(0, 0, 99);\n"
-"font-size: 15px;\n"
+"font-size: 25px;\n"
 "	font-weight: bold;\n"
 "}\n"
 "QComboBox:item:checked {\n"
@@ -3501,7 +3584,7 @@ public:
 "{\n"
 "	background-color:rgb(196, 227, 255);\n"
 "	color: black;\n"
-"	font-size: 15px;\n"
+"	font-size: 13px;\n"
 "	font-weight: bold;\n"
 "	border:1px solid black;\n"
 "}\n"
@@ -3530,7 +3613,7 @@ public:
 "{\n"
 "	background-color:rgb(196, 227, 255);\n"
 "	color: black;\n"
-"	font-size: 15px;\n"
+"	font-size: 13px;\n"
 "	font-weight: bold;\n"
 "	border:1px solid black;\n"
 "}\n"
@@ -3559,7 +3642,7 @@ public:
 "{\n"
 "	background-color:rgb(196, 227, 255);\n"
 "	color: black;\n"
-"	font-size: 15px;\n"
+"	font-size: 13px;\n"
 "	font-weight: bold;\n"
 "	border:1px solid black;\n"
 "}\n"
@@ -3625,13 +3708,13 @@ public:
         comboBox_13->setStyleSheet(QLatin1String("QComboBox:item {\n"
 "  color:white;\n"
 "background-color:rgb(0, 0, 255);\n"
-"font-size: 15px;\n"
+"font-size: 22px;\n"
 "	font-weight: bold;\n"
 "}\n"
 "QComboBox:item:selected {\n"
 " color:white;\n"
 "background-color:rgb(0, 0, 99);\n"
-"font-size: 15px;\n"
+"font-size: 25px;\n"
 "	font-weight: bold;\n"
 "}\n"
 "QComboBox:item:checked {\n"
@@ -3655,7 +3738,7 @@ public:
 "{\n"
 "	background-color:rgb(196, 227, 255);\n"
 "	color: black;\n"
-"	font-size: 15px;\n"
+"	font-size: 13px;\n"
 "	font-weight: bold;\n"
 "	border:1px solid black;\n"
 "}\n"
@@ -3810,12 +3893,12 @@ public:
 "}"));
         toolButton_27 = new QToolButton(page_9);
         toolButton_27->setObjectName(QStringLiteral("toolButton_27"));
-        toolButton_27->setGeometry(QRect(20, 410, 130, 60));
+        toolButton_27->setGeometry(QRect(20, 410, 110, 60));
         toolButton_27->setStyleSheet(QLatin1String("QToolButton\n"
 "{\n"
 "	background-color:rgb(196, 227, 255);\n"
 "	color: black;\n"
-"	font-size: 15px;\n"
+"	font-size: 13px;\n"
 "	font-weight: bold;\n"
 "	border:1px solid black;\n"
 "}\n"
@@ -3843,12 +3926,12 @@ public:
 "}"));
         toolButton_28 = new QToolButton(page_9);
         toolButton_28->setObjectName(QStringLiteral("toolButton_28"));
-        toolButton_28->setGeometry(QRect(300, 410, 130, 60));
+        toolButton_28->setGeometry(QRect(260, 410, 110, 60));
         toolButton_28->setStyleSheet(QLatin1String("QToolButton\n"
 "{\n"
 "	background-color:rgb(196, 227, 255);\n"
 "	color: black;\n"
-"	font-size: 15px;\n"
+"	font-size: 13px;\n"
 "	font-weight: bold;\n"
 "	border:1px solid black;\n"
 "}\n"
@@ -3872,12 +3955,12 @@ public:
 "}"));
         toolButton_29 = new QToolButton(page_9);
         toolButton_29->setObjectName(QStringLiteral("toolButton_29"));
-        toolButton_29->setGeometry(QRect(160, 410, 130, 60));
+        toolButton_29->setGeometry(QRect(140, 410, 110, 60));
         toolButton_29->setStyleSheet(QLatin1String("QToolButton\n"
 "{\n"
 "	background-color:rgb(196, 227, 255);\n"
 "	color: black;\n"
-"	font-size: 15px;\n"
+"	font-size: 13px;\n"
 "	font-weight: bold;\n"
 "	border:1px solid black;\n"
 "}\n"
@@ -3942,12 +4025,12 @@ public:
         tableWidget->verticalHeader()->setVisible(false);
         toolButton_34 = new QToolButton(page_9);
         toolButton_34->setObjectName(QStringLiteral("toolButton_34"));
-        toolButton_34->setGeometry(QRect(440, 410, 130, 60));
+        toolButton_34->setGeometry(QRect(380, 410, 110, 60));
         toolButton_34->setStyleSheet(QLatin1String("QToolButton\n"
 "{\n"
 "	background-color:rgb(196, 227, 255);\n"
 "	color: black;\n"
-"	font-size: 15px;\n"
+"	font-size: 13px;\n"
 "	font-weight: bold;\n"
 "	border:1px solid black;\n"
 "}\n"
@@ -4007,6 +4090,35 @@ public:
         label_41 = new QLabel(page_9);
         label_41->setObjectName(QStringLiteral("label_41"));
         label_41->setGeometry(QRect(640, 430, 141, 21));
+        toolButton_37 = new QToolButton(page_9);
+        toolButton_37->setObjectName(QStringLiteral("toolButton_37"));
+        toolButton_37->setGeometry(QRect(500, 410, 110, 60));
+        toolButton_37->setStyleSheet(QLatin1String("QToolButton\n"
+"{\n"
+"	background-color:rgb(196, 227, 255);\n"
+"	color: black;\n"
+"	font-size: 13px;\n"
+"	font-weight: bold;\n"
+"	border:1px solid black;\n"
+"}\n"
+"\n"
+"QToolButton::pressed\n"
+"{\n"
+"	background-color:rgb(69, 140, 255);\n"
+"	color: Black;\n"
+"	font-size: 15px;\n"
+"	font-weight: bold;\n"
+"	border:1px solid black;\n"
+"\n"
+"}\n"
+"QToolButton::hover\n"
+"{\n"
+"	background-color:rgb(69, 140, 255);\n"
+"	color: Black;\n"
+"	font-size: 15px;\n"
+"	font-weight: bold;\n"
+"	border:1px solid black;\n"
+"}"));
         stackedWidget->addWidget(page_9);
         page_7 = new QWidget();
         page_7->setObjectName(QStringLiteral("page_7"));
@@ -5131,13 +5243,13 @@ public:
         comboBox_14->setStyleSheet(QLatin1String("QComboBox:item {\n"
 "  color:white;\n"
 "background-color:rgb(0, 0, 255);\n"
-"font-size: 15px;\n"
+"font-size: 22px;\n"
 "	font-weight: bold;\n"
 "}\n"
 "QComboBox:item:selected {\n"
 " color:white;\n"
 "background-color:rgb(0, 0, 99);\n"
-"font-size: 15px;\n"
+"font-size: 25px;\n"
 "	font-weight: bold;\n"
 "}\n"
 "QComboBox:item:checked {\n"
@@ -5191,13 +5303,13 @@ public:
         comboBox_16->setStyleSheet(QLatin1String("QComboBox:item {\n"
 "  color:white;\n"
 "background-color:rgb(0, 0, 255);\n"
-"font-size: 15px;\n"
+"font-size: 22px;\n"
 "	font-weight: bold;\n"
 "}\n"
 "QComboBox:item:selected {\n"
 " color:white;\n"
 "background-color:rgb(0, 0, 99);\n"
-"font-size: 15px;\n"
+"font-size: 25px;\n"
 "	font-weight: bold;\n"
 "}\n"
 "QComboBox:item:checked {\n"
@@ -5231,13 +5343,13 @@ public:
         comboBox_15->setStyleSheet(QLatin1String("QComboBox:item {\n"
 "  color:white;\n"
 "background-color:rgb(0, 0, 255);\n"
-"font-size: 15px;\n"
+"font-size: 22px;\n"
 "	font-weight: bold;\n"
 "}\n"
 "QComboBox:item:selected {\n"
 " color:white;\n"
 "background-color:rgb(0, 0, 99);\n"
-"font-size: 15px;\n"
+"font-size: 25px;\n"
 "	font-weight: bold;\n"
 "}\n"
 "QComboBox:item:checked {\n"
@@ -5292,6 +5404,7 @@ public:
         pushButton_30 = new QPushButton(tab_4);
         pushButton_30->setObjectName(QStringLiteral("pushButton_30"));
         pushButton_30->setGeometry(QRect(470, 60, 221, 31));
+        pushButton_30->setStyleSheet(QStringLiteral("Text-align:left"));
         label_50 = new QLabel(tab_4);
         label_50->setObjectName(QStringLiteral("label_50"));
         label_50->setGeometry(QRect(420, 70, 31, 17));
@@ -5422,7 +5535,7 @@ public:
         QTableWidgetItem *__qtablewidgetitem15 = new QTableWidgetItem();
         tableWidget_2->setHorizontalHeaderItem(7, __qtablewidgetitem15);
         tableWidget_2->setObjectName(QStringLiteral("tableWidget_2"));
-        tableWidget_2->setGeometry(QRect(10, 70, 641, 325));
+        tableWidget_2->setGeometry(QRect(10, 70, 620, 325));
         tableWidget_2->setStyleSheet(QLatin1String("\n"
 "QTableWidget {\n"
 "   \n"
@@ -5450,7 +5563,7 @@ public:
         tableWidget_2->verticalHeader()->setVisible(false);
         pushButton_53 = new QPushButton(page_12);
         pushButton_53->setObjectName(QStringLiteral("pushButton_53"));
-        pushButton_53->setGeometry(QRect(670, 360, 110, 35));
+        pushButton_53->setGeometry(QRect(310, 410, 90, 45));
         pushButton_53->setStyleSheet(QLatin1String("QPushButton\n"
 "{\n"
 "	background-color:rgb(196, 227, 255);\n"
@@ -5479,7 +5592,7 @@ public:
 "}"));
         pushButton_54 = new QPushButton(page_12);
         pushButton_54->setObjectName(QStringLiteral("pushButton_54"));
-        pushButton_54->setGeometry(QRect(670, 320, 110, 35));
+        pushButton_54->setGeometry(QRect(650, 355, 100, 40));
         pushButton_54->setStyleSheet(QLatin1String("QPushButton\n"
 "{\n"
 "	background-color:rgb(196, 227, 255);\n"
@@ -5508,7 +5621,7 @@ public:
 "}"));
         pushButton_55 = new QPushButton(page_12);
         pushButton_55->setObjectName(QStringLiteral("pushButton_55"));
-        pushButton_55->setGeometry(QRect(490, 410, 80, 35));
+        pushButton_55->setGeometry(QRect(510, 410, 90, 45));
         pushButton_55->setStyleSheet(QLatin1String("QPushButton\n"
 "{\n"
 "	background-color:rgb(196, 227, 255);\n"
@@ -5537,7 +5650,7 @@ public:
 "}"));
         pushButton_69 = new QPushButton(page_12);
         pushButton_69->setObjectName(QStringLiteral("pushButton_69"));
-        pushButton_69->setGeometry(QRect(10, 410, 120, 35));
+        pushButton_69->setGeometry(QRect(10, 410, 90, 45));
         pushButton_69->setStyleSheet(QLatin1String("QPushButton\n"
 "{\n"
 "	background-color:rgb(196, 227, 255);\n"
@@ -5566,7 +5679,7 @@ public:
 "}"));
         pushButton_70 = new QPushButton(page_12);
         pushButton_70->setObjectName(QStringLiteral("pushButton_70"));
-        pushButton_70->setGeometry(QRect(140, 410, 120, 35));
+        pushButton_70->setGeometry(QRect(110, 410, 90, 45));
         pushButton_70->setStyleSheet(QLatin1String("QPushButton\n"
 "{\n"
 "	background-color:rgb(196, 227, 255);\n"
@@ -5595,7 +5708,7 @@ public:
 "}"));
         pushButton_71 = new QPushButton(page_12);
         pushButton_71->setObjectName(QStringLiteral("pushButton_71"));
-        pushButton_71->setGeometry(QRect(270, 410, 120, 35));
+        pushButton_71->setGeometry(QRect(210, 410, 90, 45));
         pushButton_71->setStyleSheet(QLatin1String("QPushButton\n"
 "{\n"
 "	background-color:rgb(196, 227, 255);\n"
@@ -5627,24 +5740,50 @@ public:
         label_92->setGeometry(QRect(620, 410, 161, 31));
         comboBox_17 = new QComboBox(page_12);
         comboBox_17->setObjectName(QStringLiteral("comboBox_17"));
-        comboBox_17->setGeometry(QRect(670, 70, 111, 35));
+        comboBox_17->setGeometry(QRect(650, 70, 131, 40));
+        comboBox_17->setStyleSheet(QLatin1String("QComboBox:item {\n"
+"  color:white;\n"
+"background-color:rgb(0, 0, 255);\n"
+"font-size: 22px;\n"
+"	font-weight: bold;\n"
+"}\n"
+"QComboBox:item:selected {\n"
+" color:white;\n"
+"background-color:rgb(0, 0, 99);\n"
+"font-size: 25px;\n"
+"	font-weight: bold;\n"
+"}\n"
+"QComboBox:item:checked {\n"
+" color:white;\n"
+"background-color:rgb(0, 0, 255);\n"
+"font-size: 15px;\n"
+"	font-weight: bold;\n"
+"}\n"
+"QComboBox{\n"
+" color:white;\n"
+"background-color:rgb(0, 0, 255);\n"
+"font-size: 15px;\n"
+"	font-weight: bold;\n"
+"}\n"
+"\n"
+""));
         dateEdit = new QDateEdit(page_12);
         dateEdit->setObjectName(QStringLiteral("dateEdit"));
-        dateEdit->setGeometry(QRect(670, 110, 115, 55));
-        dateEdit->setFont(font2);
+        dateEdit->setGeometry(QRect(650, 120, 131, 60));
+        dateEdit->setFont(font1);
         dateEdit->setStyleSheet(QLatin1String("QDateEdit{\n"
 "	border:1px solid black;\n"
 "}\n"
 "\n"
 "QDateEdit::down-button{\n"
-"    width: 25\n"
+"    width: 30\n"
 "}\n"
 "QDateEdit::up-button{\n"
-"    width: 25\n"
+"    width: 30\n"
 "}"));
         pushButton_72 = new QPushButton(page_12);
         pushButton_72->setObjectName(QStringLiteral("pushButton_72"));
-        pushButton_72->setGeometry(QRect(670, 173, 110, 35));
+        pushButton_72->setGeometry(QRect(650, 185, 100, 40));
         pushButton_72->setStyleSheet(QLatin1String("QPushButton\n"
 "{\n"
 "	background-color:rgb(196, 227, 255);\n"
@@ -5673,20 +5812,20 @@ public:
 "}"));
         timeEdit = new QTimeEdit(page_12);
         timeEdit->setObjectName(QStringLiteral("timeEdit"));
-        timeEdit->setGeometry(QRect(670, 215, 115, 55));
-        timeEdit->setFont(font2);
+        timeEdit->setGeometry(QRect(650, 235, 131, 60));
+        timeEdit->setFont(font1);
         timeEdit->setStyleSheet(QLatin1String("QTimeEdit{\n"
 "	border:1px solid black;\n"
 "}\n"
 "QTimeEdit::down-button{\n"
-"    width: 25\n"
+"    width: 30\n"
 "}\n"
 "QTimeEdit::up-button{\n"
-"    width: 25\n"
+"    width: 30\n"
 "}"));
         pushButton_73 = new QPushButton(page_12);
         pushButton_73->setObjectName(QStringLiteral("pushButton_73"));
-        pushButton_73->setGeometry(QRect(670, 280, 110, 35));
+        pushButton_73->setGeometry(QRect(650, 305, 100, 40));
         pushButton_73->setStyleSheet(QLatin1String("QPushButton\n"
 "{\n"
 "	background-color:rgb(196, 227, 255);\n"
@@ -5715,7 +5854,7 @@ public:
 "}"));
         pushButton_75 = new QPushButton(page_12);
         pushButton_75->setObjectName(QStringLiteral("pushButton_75"));
-        pushButton_75->setGeometry(QRect(400, 410, 80, 35));
+        pushButton_75->setGeometry(QRect(410, 410, 90, 45));
         pushButton_75->setStyleSheet(QLatin1String("QPushButton\n"
 "{\n"
 "	background-color:rgb(196, 227, 255);\n"
@@ -6059,9 +6198,9 @@ public:
         QObject::connect(dateTimeEdit_3, SIGNAL(dateChanged(QDate)), calendarWidget, SLOT(setSelectedDate(QDate)));
         QObject::connect(calendarWidget, SIGNAL(clicked(QDate)), dateTimeEdit_3, SLOT(setDate(QDate)));
 
-        stackedWidget->setCurrentIndex(10);
-        tabWidget_2->setCurrentIndex(2);
-        tabWidget->setCurrentIndex(5);
+        stackedWidget->setCurrentIndex(7);
+        tabWidget_2->setCurrentIndex(3);
+        tabWidget->setCurrentIndex(3);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -6426,7 +6565,7 @@ public:
         toolButton_22->setText(QApplication::translate("MainWindow", "Save Plate", nullptr));
         toolButton_23->setText(QApplication::translate("MainWindow", "Save Results", nullptr));
         toolButton_24->setText(QApplication::translate("MainWindow", "Print Matrix", nullptr));
-        pushButton_20->setText(QApplication::translate("MainWindow", "PushButton", nullptr));
+        pushButton_20->setText(QString());
         label_17->setText(QApplication::translate("MainWindow", "TextLabel", nullptr));
         label_38->setText(QApplication::translate("MainWindow", "TextLabel", nullptr));
         label_42->setText(QString());
@@ -6455,10 +6594,11 @@ public:
         QTableWidgetItem *___qtablewidgetitem7 = tableWidget->horizontalHeaderItem(7);
         ___qtablewidgetitem7->setText(QApplication::translate("MainWindow", "PID", nullptr));
         toolButton_34->setText(QApplication::translate("MainWindow", "Print Table", nullptr));
-        pushButton_21->setText(QApplication::translate("MainWindow", "PushButton", nullptr));
+        pushButton_21->setText(QString());
         label_39->setText(QApplication::translate("MainWindow", "TextLabel", nullptr));
         label_40->setText(QApplication::translate("MainWindow", "TextLabel", nullptr));
         label_41->setText(QString());
+        toolButton_37->setText(QApplication::translate("MainWindow", "Export Table", nullptr));
         pushButton_2->setText(QApplication::translate("MainWindow", "405", nullptr));
         pushButton_7->setText(QApplication::translate("MainWindow", "450", nullptr));
         pushButton_8->setText(QApplication::translate("MainWindow", "490", nullptr));
@@ -6595,7 +6735,7 @@ public:
         tabWidget->setTabText(tabWidget->indexOf(tab_5), QApplication::translate("MainWindow", "LIS", nullptr));
         pushButton_33->setText(QApplication::translate("MainWindow", "Check for updates", nullptr));
         label_53->setText(QApplication::translate("MainWindow", "Current Version", nullptr));
-        label_67->setText(QApplication::translate("MainWindow", "V1.0.10", nullptr));
+        label_67->setText(QApplication::translate("MainWindow", "V1.1.1", nullptr));
         label_68->setText(QString());
         tabWidget->setTabText(tabWidget->indexOf(tab_6), QApplication::translate("MainWindow", "Version", nullptr));
         QTableWidgetItem *___qtablewidgetitem8 = tableWidget_2->horizontalHeaderItem(0);
@@ -6617,9 +6757,9 @@ public:
         pushButton_53->setText(QApplication::translate("MainWindow", "Print Table", nullptr));
         pushButton_54->setText(QApplication::translate("MainWindow", "Print Result", nullptr));
         pushButton_55->setText(QApplication::translate("MainWindow", "Back", nullptr));
-        pushButton_69->setText(QApplication::translate("MainWindow", "Exp. Table to CSV", nullptr));
-        pushButton_70->setText(QApplication::translate("MainWindow", "Exp. Table to LIS", nullptr));
-        pushButton_71->setText(QApplication::translate("MainWindow", "Exp. Result to LIS", nullptr));
+        pushButton_69->setText(QApplication::translate("MainWindow", "To CSV", nullptr));
+        pushButton_70->setText(QApplication::translate("MainWindow", "Table to LIS", nullptr));
+        pushButton_71->setText(QApplication::translate("MainWindow", "Result to LIS", nullptr));
         label_92->setText(QString());
         dateEdit->setDisplayFormat(QApplication::translate("MainWindow", "dd-MM-yyyy", nullptr));
         pushButton_72->setText(QApplication::translate("MainWindow", "Apply Date", nullptr));
