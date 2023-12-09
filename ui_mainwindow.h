@@ -2754,6 +2754,9 @@ public:
         textBrowser_4 = new QTextBrowser(frame_14);
         textBrowser_4->setObjectName(QStringLiteral("textBrowser_4"));
         textBrowser_4->setGeometry(QRect(10, 200, 131, 130));
+        toolButton_19->raise();
+        textBrowser_4->raise();
+        toolButton_18->raise();
         stackedWidget->addWidget(page_6);
         page_8 = new QWidget();
         page_8->setObjectName(QStringLiteral("page_8"));
@@ -6198,9 +6201,9 @@ public:
         QObject::connect(dateTimeEdit_3, SIGNAL(dateChanged(QDate)), calendarWidget, SLOT(setSelectedDate(QDate)));
         QObject::connect(calendarWidget, SIGNAL(clicked(QDate)), dateTimeEdit_3, SLOT(setDate(QDate)));
 
-        stackedWidget->setCurrentIndex(7);
-        tabWidget_2->setCurrentIndex(3);
-        tabWidget->setCurrentIndex(3);
+        stackedWidget->setCurrentIndex(10);
+        tabWidget_2->setCurrentIndex(2);
+        tabWidget->setCurrentIndex(5);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -6735,7 +6738,7 @@ public:
         tabWidget->setTabText(tabWidget->indexOf(tab_5), QApplication::translate("MainWindow", "LIS", nullptr));
         pushButton_33->setText(QApplication::translate("MainWindow", "Check for updates", nullptr));
         label_53->setText(QApplication::translate("MainWindow", "Current Version", nullptr));
-        label_67->setText(QApplication::translate("MainWindow", "V1.1.1", nullptr));
+        label_67->setText(QApplication::translate("MainWindow", "V1.1.2", nullptr));
         label_68->setText(QString());
         tabWidget->setTabText(tabWidget->indexOf(tab_6), QApplication::translate("MainWindow", "Version", nullptr));
         QTableWidgetItem *___qtablewidgetitem8 = tableWidget_2->horizontalHeaderItem(0);
