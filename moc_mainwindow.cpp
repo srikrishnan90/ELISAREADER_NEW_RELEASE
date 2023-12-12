@@ -699,7 +699,7 @@ static const uint qt_meta_data_MainWindow[] = {
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
-    QMetaType::Void,
+    QMetaType::Int,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
@@ -892,7 +892,8 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 146: _t->init(); break;
         case 147: _t->motor_init(); break;
         case 148: _t->motor_index_init(); break;
-        case 149: _t->adc_init(); break;
+        case 149: { int _r = _t->adc_init();
+            if (_a[0]) *reinterpret_cast< int*>(_a[0]) = std::move(_r); }  break;
         case 150: _t->i2c_init(); break;
         case 151: _t->led_init(); break;
         case 152: _t->on_pushButton_10_clicked(); break;

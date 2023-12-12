@@ -6269,8 +6269,8 @@ public:
         QObject::connect(dateTimeEdit_3, SIGNAL(dateChanged(QDate)), calendarWidget, SLOT(setSelectedDate(QDate)));
         QObject::connect(calendarWidget, SIGNAL(clicked(QDate)), dateTimeEdit_3, SLOT(setDate(QDate)));
 
-        stackedWidget->setCurrentIndex(5);
-        tabWidget_2->setCurrentIndex(2);
+        stackedWidget->setCurrentIndex(10);
+        tabWidget_2->setCurrentIndex(0);
         tabWidget->setCurrentIndex(5);
 
 
@@ -6289,7 +6289,7 @@ public:
         toolButton_7->setText(QApplication::translate("MainWindow", "Delete", nullptr));
         toolButton_8->setText(QApplication::translate("MainWindow", "Run", nullptr));
         toolButton_9->setText(QApplication::translate("MainWindow", "Absorbance", nullptr));
-        toolButton_10->setText(QApplication::translate("MainWindow", "Multo-Standard", nullptr));
+        toolButton_10->setText(QApplication::translate("MainWindow", "Multi-Standard", nullptr));
         toolButton_11->setText(QApplication::translate("MainWindow", "Cut-Off", nullptr));
         label_34->setText(QApplication::translate("MainWindow", "Experiment Name", nullptr));
         label_35->setText(QApplication::translate("MainWindow", "Pri. Wavelength", nullptr));
@@ -6816,7 +6816,7 @@ public:
         tabWidget->setTabText(tabWidget->indexOf(tab_5), QApplication::translate("MainWindow", "LIS", nullptr));
         pushButton_33->setText(QApplication::translate("MainWindow", "Check for updates", nullptr));
         label_53->setText(QApplication::translate("MainWindow", "Current Version", nullptr));
-        label_67->setText(QApplication::translate("MainWindow", "V1.1.3", nullptr));
+        label_67->setText(QApplication::translate("MainWindow", "V1.1.4", nullptr));
         label_68->setText(QString());
         tabWidget->setTabText(tabWidget->indexOf(tab_6), QApplication::translate("MainWindow", "Version", nullptr));
         QTableWidgetItem *___qtablewidgetitem8 = tableWidget_2->horizontalHeaderItem(0);
