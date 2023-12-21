@@ -4746,12 +4746,12 @@ public:
         tab_8->setObjectName(QStringLiteral("tab_8"));
         frame_16 = new QFrame(tab_8);
         frame_16->setObjectName(QStringLiteral("frame_16"));
-        frame_16->setGeometry(QRect(30, 20, 211, 321));
+        frame_16->setGeometry(QRect(10, 40, 181, 301));
         frame_16->setFrameShape(QFrame::StyledPanel);
         frame_16->setFrameShadow(QFrame::Raised);
         pushButton_12 = new QPushButton(frame_16);
         pushButton_12->setObjectName(QStringLiteral("pushButton_12"));
-        pushButton_12->setGeometry(QRect(30, 130, 141, 30));
+        pushButton_12->setGeometry(QRect(20, 130, 141, 30));
         pushButton_12->setStyleSheet(QLatin1String("QPushButton\n"
 "{\n"
 "	background-color:rgb(196, 227, 255);\n"
@@ -4780,7 +4780,7 @@ public:
 "}"));
         pushButton_13 = new QPushButton(frame_16);
         pushButton_13->setObjectName(QStringLiteral("pushButton_13"));
-        pushButton_13->setGeometry(QRect(30, 80, 141, 30));
+        pushButton_13->setGeometry(QRect(20, 80, 141, 30));
         pushButton_13->setStyleSheet(QLatin1String("QPushButton\n"
 "{\n"
 "	background-color:rgb(196, 227, 255);\n"
@@ -4809,7 +4809,7 @@ public:
 "}"));
         pushButton_14 = new QPushButton(frame_16);
         pushButton_14->setObjectName(QStringLiteral("pushButton_14"));
-        pushButton_14->setGeometry(QRect(30, 30, 141, 30));
+        pushButton_14->setGeometry(QRect(20, 30, 141, 30));
         pushButton_14->setStyleSheet(QLatin1String("QPushButton\n"
 "{\n"
 "	background-color:rgb(196, 227, 255);\n"
@@ -4840,7 +4840,7 @@ public:
         comboBox_18->addItem(QString());
         comboBox_18->addItem(QString());
         comboBox_18->setObjectName(QStringLiteral("comboBox_18"));
-        comboBox_18->setGeometry(QRect(30, 210, 141, 40));
+        comboBox_18->setGeometry(QRect(20, 210, 141, 40));
         comboBox_18->setStyleSheet(QLatin1String("QComboBox:item {\n"
 "  color:white;\n"
 "background-color:rgb(0, 0, 255);\n"
@@ -4872,7 +4872,7 @@ public:
 ""));
         label_101 = new QLabel(frame_16);
         label_101->setObjectName(QStringLiteral("label_101"));
-        label_101->setGeometry(QRect(30, 180, 141, 17));
+        label_101->setGeometry(QRect(20, 180, 141, 17));
         label_101->setAlignment(Qt::AlignCenter);
         tabWidget_2->addTab(tab_8, QString());
         tab_9 = new QWidget();
@@ -6270,7 +6270,7 @@ public:
         QObject::connect(calendarWidget, SIGNAL(clicked(QDate)), dateTimeEdit_3, SLOT(setDate(QDate)));
 
         stackedWidget->setCurrentIndex(10);
-        tabWidget_2->setCurrentIndex(0);
+        tabWidget_2->setCurrentIndex(1);
         tabWidget->setCurrentIndex(5);
 
 
@@ -6816,7 +6816,7 @@ public:
         tabWidget->setTabText(tabWidget->indexOf(tab_5), QApplication::translate("MainWindow", "LIS", nullptr));
         pushButton_33->setText(QApplication::translate("MainWindow", "Check for updates", nullptr));
         label_53->setText(QApplication::translate("MainWindow", "Current Version", nullptr));
-        label_67->setText(QApplication::translate("MainWindow", "V1.1.4", nullptr));
+        label_67->setText(QApplication::translate("MainWindow", "V1.1.5", nullptr));
         label_68->setText(QString());
         tabWidget->setTabText(tabWidget->indexOf(tab_6), QApplication::translate("MainWindow", "Version", nullptr));
         QTableWidgetItem *___qtablewidgetitem8 = tableWidget_2->horizontalHeaderItem(0);
