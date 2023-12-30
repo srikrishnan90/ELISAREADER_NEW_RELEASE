@@ -6269,8 +6269,8 @@ public:
         QObject::connect(dateTimeEdit_3, SIGNAL(dateChanged(QDate)), calendarWidget, SLOT(setSelectedDate(QDate)));
         QObject::connect(calendarWidget, SIGNAL(clicked(QDate)), dateTimeEdit_3, SLOT(setDate(QDate)));
 
-        stackedWidget->setCurrentIndex(10);
-        tabWidget_2->setCurrentIndex(1);
+        stackedWidget->setCurrentIndex(8);
+        tabWidget_2->setCurrentIndex(0);
         tabWidget->setCurrentIndex(5);
 
 
@@ -6731,7 +6731,7 @@ public:
         ch8_490->setText(QString());
         ch8_450->setText(QString());
         ch8_op1->setText(QString());
-        freq_405->setText(QApplication::translate("MainWindow", "5000", nullptr));
+        freq_405->setText(QString());
         freq_630->setText(QString());
         freq_490->setText(QString());
         freq_450->setText(QString());
@@ -6816,7 +6816,7 @@ public:
         tabWidget->setTabText(tabWidget->indexOf(tab_5), QApplication::translate("MainWindow", "LIS", nullptr));
         pushButton_33->setText(QApplication::translate("MainWindow", "Check for updates", nullptr));
         label_53->setText(QApplication::translate("MainWindow", "Current Version", nullptr));
-        label_67->setText(QApplication::translate("MainWindow", "V1.1.5", nullptr));
+        label_67->setText(QApplication::translate("MainWindow", "V1.1.6", nullptr));
         label_68->setText(QString());
         tabWidget->setTabText(tabWidget->indexOf(tab_6), QApplication::translate("MainWindow", "Version", nullptr));
         QTableWidgetItem *___qtablewidgetitem8 = tableWidget_2->horizontalHeaderItem(0);
