@@ -2367,7 +2367,7 @@ public:
 
         retranslateUi(keyboard);
 
-        stackedWidget_2->setCurrentIndex(2);
+        stackedWidget_2->setCurrentIndex(0);
 
 
         QMetaObject::connectSlotsByName(keyboard);
