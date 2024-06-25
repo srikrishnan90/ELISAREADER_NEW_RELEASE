@@ -6249,7 +6249,7 @@ public:
         QObject::connect(calendarWidget, SIGNAL(clicked(QDate)), dateTimeEdit_3, SLOT(setDate(QDate)));
 
         stackedWidget->setCurrentIndex(10);
-        tabWidget_2->setCurrentIndex(0);
+        tabWidget_2->setCurrentIndex(2);
         tabWidget->setCurrentIndex(5);
 
 
@@ -6798,7 +6798,7 @@ public:
         tabWidget->setTabText(tabWidget->indexOf(tab_5), QApplication::translate("MainWindow", "LIS", nullptr));
         pushButton_33->setText(QApplication::translate("MainWindow", "Check for updates", nullptr));
         label_53->setText(QApplication::translate("MainWindow", "Current Version", nullptr));
-        label_67->setText(QApplication::translate("MainWindow", "V1.2.0", nullptr));
+        label_67->setText(QApplication::translate("MainWindow", "V1.2.1", nullptr));
         label_68->setText(QString());
         tabWidget->setTabText(tabWidget->indexOf(tab_6), QApplication::translate("MainWindow", "Version", nullptr));
         QTableWidgetItem *___qtablewidgetitem8 = tableWidget_2->horizontalHeaderItem(0);
